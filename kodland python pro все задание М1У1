@@ -1,0 +1,42 @@
+# Удиви своих одногруппников!
+import random
+#Name
+name = input("Введи свою фамилию")
+#Hobbie
+my_hobbies = ["Люблю изучать python", "Люблю рисовать", "Люблю изучать актерское мастерство", "Люблю готовить"]
+print(random.choice(my_hobbies))
+#Eats
+my_love_eats = ["Моё любимое блюдо: мясо по французски", "Моё любимое блюдо: медовик", "Моё любимое блюдо: спагетти"]
+print(random.choice(my_love_eats))
+print("Мой любимый смайлик:")
+emojis = ["^^", "0_o", ":)", "¯\_(ツ)_/¯", "(￢_￢)"]
+print(emojis[2])
+
+a = input("Напиши любое предложение:")
+if len(a) > 10:
+    i = a[:10] + "..."
+else:
+    i = a
+print(i)
+
+
+name = input("Как тебя зовут?")
+age = int(input("Сколько тебе лет?"))
+a = 9
+next_year_age = age + a
+print("Привет," ,name, "через девять лет тебе будет" ,next_year_age)
+
+
+a = input("Введите слово: ")
+b = "аеёиоуыэюяАЕЁИОУЫЭЮЯ"
+count = 0
+for i in a:
+    if i in b:
+        count += 1
+print("Гласных букв:", count)
+
+
+x = 5
+x = x + 2
+x *= 3
+print(x)
